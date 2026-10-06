@@ -1,39 +1,56 @@
 # Código de Conducta de la Comunidad - I.E. Dionisio Manco Campos
 
-## Nuestro Compromiso
+**Institución Educativa Pública "Dionisio Manco Campos"**  
+*Mala, Cañete, Lima - Perú | UGEL N° 08 Cañete | Cód. Modular: 0286385*
 
-En el interés de fomentar un ambiente abierto, acogedor y formativo, nosotros como colaboradores y administradores del portal web de la **Institución Educativa Pública Dionisio Manco Campos (Mala, Cañete)** nos comprometemos a hacer de la participación en este proyecto una experiencia libre de acoso para todos, independientemente de la edad, dimensión corporal, discapacidad, etnia, identidad y expresión de género, nivel de experiencia, nacionalidad, apariencia personal, raza, religión o identidad y orientación sexual.
+---
 
-## Nuestros Estándares
+## 1. Nuestro Compromiso
 
-Ejemplos de comportamientos que contribuyen a crear un ambiente positivo incluyen:
-* Uso de lenguaje cordial, empático e inclusivo.
-* Respeto a los diferentes puntos de vista y experiencias de la comunidad educativa (estudiantes, docentes, directivos, padres de familia y exalumnos).
-* Aceptación constructiva de las críticas y sugerencias.
-* Enfoque en lo que es mejor para la comunidad mancocampina y la formación integral de los estudiantes.
-* Demostración de empatía y compañerismo hacia otros miembros de la comunidad escolar y técnica.
+En el interés de fomentar un ambiente escolar, técnico y comunitario abierto, seguro, inclusivo y formativo, nosotros como administradores, directivos, docentes, estudiantes y colaboradores del portal institucional de la **Institución Educativa Pública Dionisio Manco Campos (Mala, Cañete)** nos comprometemos a hacer de este entorno un espacio libre de acoso y discriminación para todas las personas, independientemente de:
+- Edad o condición socioeconómica.
+- Discapacidad física o sensorial.
+- Etnia, lengua materna o procedencia geográfica (valle de Mala y la provincia de Cañete).
+- Identidad y expresión de género u orientación sexual.
+- Nivel de experiencia académica o tecnológica.
+- Creencias religiosas o convicciones cívicas.
 
-Ejemplos de comportamiento inaceptable incluyen:
-* El uso de lenguaje o imágenes de contenido sexual inapropiado.
-* Comentarios despectivos o ataques personales / ciberacoso (trolling).
-* Acoso público o privado en cualquiera de sus formas.
-* Publicación de información privada de otros, como direcciones físicas o electrónicas, sin permiso explícito.
-* Cualquier otra conducta que razonablemente pueda considerarse inapropiada en un entorno educativo e institucional.
+---
 
-## Nuestras Responsabilidades
+## 2. Nuestros Estándares de Conducta
 
-Los administradores del proyecto son responsables de clarificar los estándares de comportamiento aceptable y se espera que tomen medidas correctivas justas y apropiadas en respuesta a cualquier comportamiento inaceptable.
+Los comportamientos que fortalecen el lema institucional **"Patria, Estudio y Disciplina"** y construyen una convivencia sana incluyen:
+* **Respeto y cordialidad:** Emplear comunicación empática, asertiva y formal en las solicitudes, trámites de Mesa de Partes y consultas digitales.
+* **Integridad informativa:** Proporcionar información real, verídica y verificada sobre la comunidad educativa mancocampina, su historia y sus actividades.
+* **Colaboración pedagógica:** Apoyar constructivamente las iniciativas del Municipio Escolar, la APAFA, el cuerpo docente y el equipo directivo.
+* **Protección al menor:** Resguardar celosamente la identidad, privacidad y dignidad de los estudiantes de secundaria y CEBA.
 
-Los administradores tienen el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, commits, código, ediciones de documentación, issues y otras contribuciones que no estén alineadas con este Código de Conducta.
+Comportamientos estrictamente inaceptables:
+* Publicar contenido difamatorio, lenguaje ofensivo, amenazas o acoso en cualquiera de sus formas.
+* Suplantación de identidad en formularios de admisión, Mesa de Partes Virtual o canales de contacto.
+* Divulgación no autorizada de datos personales de menores de edad o docentes sin consentimiento explícito.
+* Uso indebido de los símbolos oficiales del colegio (escudo, himno, emblemas) para fines lesivos o comerciales.
 
-## Alcance
+---
 
-Este Código de Conducta es aplicable tanto dentro de los espacios del proyecto (repositorio, sitio web, canales de retroalimentación) como en espacios públicos cuando un individuo representa formalmente al proyecto o a la institución educativa.
+## 3. Responsabilidades y Moderación
 
-## Aplicación y Contacto
+El equipo de administración y soporte digital de la institución tiene la potestad de:
+1. Revisar y moderar las solicitudes enviadas a través de la plataforma web oficial.
+2. Desestimar peticiones fraudulentas o comunicaciones que infrinjan las normas de convivencia escolar vigentes por el Ministerio de Educación (MINEDU).
+3. Mantener y actualizar el registro de seguridad de las comunicaciones en estrecha coordinación con la Dirección del plantel.
 
-Casos de abuso, acoso u otra conducta inaceptable pueden ser reportados contactando al equipo de administración y soporte digital institucional a través de los canales oficiales de la I.E. Dionisio Manco Campos en Mala, Cañete. Todas las quejas serán revisadas e investigadas de manera justa y confidencial.
+---
 
-## Atribución
+## 4. Canales de Reporte y Atención
 
-Este Código de Conducta está adaptado del [Contributor Covenant](https://www.contributor-covenant.org), versión 2.0.
+Cualquier conducta contraria a este código puede ser comunicada de manera formal y confidencial a través de:
+* **Mesa de Partes Virtual:** [https://dmc-betazone.vercel.app/pages/services/contact#mesa-de-partes](https://dmc-betazone.vercel.app/pages/services/contact#mesa-de-partes)
+* **Correo Institucional:** `mesadepartes@dmc.edu.pe`
+* **Central Telefónica:** (01) 339-6215 / (01) 301-7765
+* **Sede Central:** Jr. Enrique Swayne s/n, Mala, Cañete, Lima - Perú.
+
+---
+
+## 5. Marco Legal y Referencia
+Este Código de Conducta se sustenta en la **Ley N° 29719** (Ley que promueve la convivencia sin violencia en las instituciones educativas), la normativa del **CNEB - MINEDU** y los principios del **Contributor Covenant v2.0**.
