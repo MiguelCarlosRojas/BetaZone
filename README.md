@@ -85,9 +85,23 @@ BetaZone/
 │       ├── procedures/                        # Mesa de partes virtual, certificados, constancias, FUT, TUPA
 │       └── news/                              # Comunicados de dirección, desfiles, aniversarios, convenios
 │
+├── components/                                # COMPONENTES MODULARES REUTILIZABLES
+│   ├── index.js                               # Registro central de Custom Elements
+│   ├── layout/                                # Componentes de Maquetación y Estructura
+│   │   ├── header/header.js                   # Header unificado y barra de avisos
+│   │   └── footer/footer.js                   # Footer institucional con códigos, sedes y enlaces
+│   ├── navigation/                            # Componentes de Navegación Interactiva
+│   │   ├── breadcrumb/breadcrumb.js           # Migas de pan dinámicas y funcionales
+│   │   └── drawer/drawer.js                   # Menú móvil deslizable accesible
+│   └── ui/                                    # Componentes de Interfaz de Usuario
+│       ├── button/button.js                   # Botón institucional con variantes (gold/navy/outline)
+│       ├── card/card.js                       # Tarjetas de contenido (glass, dark, stat)
+│       └── modal/modal.js                     # Ventana modal de feedback y trámites
+│
 ├── styles/
-│   └── colegio.css                            # Sistema de diseño con Plus Jakarta Sans y Outfit
+│   └── colegio.css                            # Sistema de diseño full-width con Plus Jakarta Sans y Outfit
 ├── js/
+│   ├── components.js                          # Loader modular para componentes
 │   └── app.js                                 # Buscador, filtros de talleres, modal interactivo y drawer
 └── img/
     ├── escudo-dmc.svg                         # Escudo vectorial oficial
@@ -100,8 +114,7 @@ BetaZone/
 ## 🚀 Despliegue en Vercel (Producción Activa)
 
 El portal está optimizado y desplegado en producción:
-- **URL Oficial:** [https://landing-page-beta-chi.vercel.app](https://landing-page-beta-chi.vercel.app)
-- **URL de Producción Vercel:** [https://dmc-betazone.vercel.app](https://dmc-betazone.vercel.app)
+- **URL Oficial Única:** [https://dmc-betazone.vercel.app](https://dmc-betazone.vercel.app)
 
 ---
 
