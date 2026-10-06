@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subdirección de Formación General | I.E. Dionisio Manco Campos - Mala, Cañete</title>
+  <meta name="description" content="Acompañamiento técnico pedagógico y optimización de los aprendizajes.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Subdirección de Formación General | I.E. Dionisio Manco Campos">
+  <meta property="og:description" content="Acompañamiento técnico pedagógico y optimización de los aprendizajes.">
+  <meta property="og:image" content="../img/escudo-dmc.svg">
+  <meta property="og:type" content="article">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+  <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dmcNavy: { 900: '#091929', 800: '#0f2942', 700: '#173d63', 600: '#1e4b7a' },
+            dmcGold: { 300: '#fef08a', 400: '#fde047', 500: '#eab308', 600: '#ca8a04', 700: '#a16207' },
+          },
+          fontFamily: {
+            heading: ['Outfit', 'Montserrat', 'sans-serif'],
+            sans: ['Inter', 'Segoe UI', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../styles/colegio.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+
+  <!-- TOP BAR INFORMATIVA -->
+  <div class="top-announcement text-white py-2 px-4 sm:px-8 text-xs sm:text-sm font-medium">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+        <span><i class="fas fa-school text-yellow-400 mr-1.5"></i> UGEL N° 08 Cañete &bull; Cód. Modular: <strong>0286385</strong></span>
+        <span class="hidden sm:inline text-slate-300">|</span>
+        <span><i class="fas fa-map-marker-alt text-yellow-400 mr-1.5"></i> Jr. Enrique Swayne s/n, Mala - Cañete</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:013396215" class="hover:text-yellow-300 transition-colors"><i class="fas fa-phone-alt text-yellow-400 mr-1"></i> (01) 339-6215</a>
+        <span class="text-slate-300">|</span>
+        <a href="https://www.facebook.com/iepdmc" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition-colors">
+          <i class="fab fa-facebook-f text-yellow-400"></i> Facebook Oficial
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER NAVEGACIÓN PRINCIPAL -->
+  <header id="main-header" class="sticky top-0 z-50 glass-nav transition-all duration-300 py-3 px-4 sm:px-8 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- LOGO INSTITUCIONAL -->
+      <a href="../index.html" class="flex items-center gap-3 group">
+        <img src="../img/escudo-dmc.svg" alt="Escudo DMC" class="h-11 sm:h-12 w-auto drop-shadow-md group-hover:scale-105 transition-transform">
+        <div class="flex flex-col">
+          <span class="font-heading font-black text-base sm:text-lg text-white tracking-wide leading-tight">
+            I.E. DIONISIO MANCO CAMPOS
+          </span>
+          <span class="text-[10px] sm:text-xs font-semibold text-yellow-400 tracking-wider uppercase">
+            Nivel Secundaria &bull; Mala, Cañete
+          </span>
+        </div>
+      </a>
+
+      <!-- ENLACES DESKTOP CON MEGA-DROPDOWNS -->
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-6 font-medium text-xs xl:text-sm text-slate-200">
+        <a href="../index.html" class="nav-link hover:text-yellow-400 py-1">Inicio</a>
+        <a href="../institucional/index.html" class="nav-link hover:text-yellow-400 py-1">Institucional</a>
+        <a href="../grados/index.html" class="nav-link hover:text-yellow-400 py-1">Grados</a>
+        <a href="../areas-curriculares/index.html" class="nav-link hover:text-yellow-400 py-1">Áreas</a>
+        <a href="../ceba/index.html" class="nav-link hover:text-yellow-400 py-1">CEBA</a>
+        <a href="../talleres-actividades/index.html" class="nav-link hover:text-yellow-400 py-1">Talleres</a>
+        <a href="../admision-matricula/index.html" class="nav-link hover:text-yellow-400 py-1">Admisión</a>
+        <a href="../tramites-servicios/index.html" class="nav-link hover:text-yellow-400 py-1">Trámites</a>
+      </nav>
+
+      <!-- BOTÓN CTA -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="../tramites-servicios/mesa-de-partes.html" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-slate-950 font-bold px-3.5 py-2 rounded-lg text-xs uppercase tracking-wider shadow-lg transition-all hover:-translate-y-0.5">
+          <i class="fas fa-file-invoice"></i> Mesa de Partes
+        </a>
+      </div>
+
+      <!-- BOTÓN HAMBURGUESA MÓVIL -->
+      <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-yellow-400 text-2xl p-2 focus:outline-none" aria-label="Abrir Menú">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- MENÚ LATERAL MÓVIL (DRAWER) -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-dmcNavy-900 border-l border-yellow-500/30 z-50 transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between overflow-y-auto">
+    <div>
+      <div class="flex items-center justify-between pb-5 border-b border-slate-700">
+        <div class="flex items-center gap-2">
+          <img src="../img/escudo-dmc.svg" alt="Escudo DMC" class="h-9 w-auto">
+          <span class="font-heading font-black text-white text-sm">I.E. DMC MALA</span>
+        </div>
+        <button id="mobile-menu-close" class="text-slate-400 hover:text-white text-2xl p-1" aria-label="Cerrar Menú">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-2.5 mt-5 text-slate-200 text-xs font-semibold">
+        <a href="../index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-home w-5 text-yellow-400"></i> Inicio</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../institucional/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-landmark w-5 text-yellow-400"></i> Institucional</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../grados/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-chalkboard-teacher w-5 text-yellow-400"></i> Grados y Secciones</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../areas-curriculares/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-book w-5 text-yellow-400"></i> Áreas Curriculares</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../ceba/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-user-graduate w-5 text-yellow-400"></i> Modalidad CEBA</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../talleres-actividades/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-palette w-5 text-yellow-400"></i> Talleres & Deportes</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../comunidad-estudiantil/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-users w-5 text-yellow-400"></i> Vida Estudiantil</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../padres-apafa/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-user-friends w-5 text-yellow-400"></i> Familias & APAFA</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../infraestructura/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-building w-5 text-yellow-400"></i> Infraestructura</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../admision-matricula/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-user-plus w-5 text-yellow-400"></i> Admisión & Matrícula</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../tramites-servicios/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-concierge-bell w-5 text-yellow-400"></i> Trámites & Servicios</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+        <a href="../noticias-eventos/index.html" class="hover:text-yellow-400 py-2 border-b border-slate-800 flex items-center justify-between">
+          <span><i class="fas fa-newspaper w-5 text-yellow-400"></i> Noticias & Eventos</span>
+          <i class="fas fa-chevron-right text-[10px]"></i>
+        </a>
+      </nav>
+    </div>
+    <div class="pt-5 border-t border-slate-800 text-center">
+      <a href="../tramites-servicios/mesa-de-partes.html" class="block w-full bg-yellow-500 text-slate-950 font-bold py-2.5 rounded-lg text-xs uppercase shadow-md">
+        <i class="fas fa-file-invoice mr-1"></i> Mesa de Partes Virtual
+      </a>
+    </div>
+  </div>
+    
+
+  <!-- SUBPAGE HERO BANNER -->
+  <section class="hero-subpage text-white py-14 sm:py-20 px-4 sm:px-8 relative text-center">
+    <div class="max-w-4xl mx-auto space-y-3">
+      <div class="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-300 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-yellow-500/30">
+        <i class="fas fa-chalkboard-teacher"></i> Institucional &bull; I.E. Dionisio Manco Campos
+      </div>
+      <h1 class="font-heading font-black text-2xl sm:text-4xl text-white">Subdirección de Formación General</h1>
+      <p class="text-slate-300 text-xs sm:text-sm max-w-2xl mx-auto">Acompañamiento técnico pedagógico y optimización de los aprendizajes.</p>
+    </div>
+  </section>
+
+  <!-- BREADCRUMBS -->
+  <div class="bg-white border-b border-slate-200 py-2.5 px-4 sm:px-8 text-xs text-slate-500 font-medium">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 flex-wrap">
+      <a href="../index.html" class="hover:text-yellow-600"><i class="fas fa-home"></i> Inicio</a>
+      <span>/</span>
+      <span class="text-slate-400">Institucional</span>
+      <span>/</span>
+      <span class="text-dmcNavy-900 font-bold">Subdirección de Formación General</span>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="py-12 px-4 sm:px-8 max-w-7xl mx-auto w-full flex-1">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- ARTÍCULO PRINCIPAL -->
+      <article class="lg:col-span-8 bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-sm space-y-6 text-sm leading-relaxed text-slate-700">
+        
+        <h3>Acompañamiento Pedagógico en Secundaria</h3>
+        <p>La <strong>Subdirección de Formación General</strong> es el órgano responsable de coordinar, supervisar y asesorar el trabajo técnico-pedagógico de los docentes en las 11 áreas curriculares de secundaria.</p>
+        <h4>Líneas de Acción:</h4>
+        <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+            <li>Revisión de programaciones curriculares anuales, unidades y sesiones de aprendizaje.</li>
+            <li>Desarrollo de comunidades de aprendizaje profesional (GIA - Grupos de Interaprendizaje).</li>
+            <li>Análisis de resultados de las evaluaciones diagnósticas, de proceso y de salida.</li>
+            <li>Promoción de estrategias didácticas innovadoras centradas en el estudiante.</li>
+        </ul>
+        
+        
+        <div class="pt-6 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4 text-xs">
+          <div class="flex items-center gap-2 text-slate-400">
+            <i class="fas fa-shield-alt text-yellow-500"></i>
+            <span>Información Institucional Oficial &bull; Mala, Cañete</span>
+          </div>
+          <a href="../tramites-servicios/mesa-de-partes.html" class="font-bold text-dmcNavy-900 hover:text-yellow-600 transition-colors">
+            ¿Consultas sobre este tema? Ir a Mesa de Partes &rarr;
+          </a>
+        </div>
+      </article>
+
+      <!-- SIDEBAR COMPLEMENTARIO -->
+      <aside class="lg:col-span-4 space-y-6">
+        
+        <!-- Tarjeta Rápida -->
+        <div class="bg-dmcNavy-900 text-white p-6 rounded-3xl border border-yellow-500/30 shadow-lg text-center space-y-4">
+          <img src="../img/escudo-dmc.svg" alt="Escudo DMC" class="h-20 mx-auto drop-shadow-md">
+          <div>
+            <h4 class="font-heading font-black text-sm text-yellow-400">I.E. DIONISIO MANCO CAMPOS</h4>
+            <p class="text-[11px] text-slate-300">Alma Máter de Mala &bull; UGEL 08 Cañete</p>
+          </div>
+          <div class="text-[11px] bg-slate-950 p-2.5 rounded-xl font-bold tracking-wider text-slate-200">
+            "PATRIA &bull; ESTUDIO &bull; DISCIPLINA"
+          </div>
+          <a href="../admision-matricula/index.html" class="block w-full bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-bold py-2 rounded-xl text-xs uppercase transition-colors">
+            Matrícula y Vacantes
+          </a>
+        </div>
+
+        <!-- Enlaces Rápidos de la Categoría -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-3">
+          <h4 class="font-heading font-bold text-dmcNavy-900 text-xs uppercase tracking-wider border-l-2 border-yellow-500 pl-2">
+            Módulos Relacionados
+          </h4>
+          <ul class="text-xs space-y-2 text-slate-600">
+            <li><a href="../institucional/historia.html" class="hover:text-yellow-600 flex items-center justify-between"><span>&bull; Historia desde 1962</span> <i class="fas fa-chevron-right text-[10px]"></i></a></li>
+            <li><a href="../grados/index.html" class="hover:text-yellow-600 flex items-center justify-between"><span>&bull; Grados de 1° a 5°</span> <i class="fas fa-chevron-right text-[10px]"></i></a></li>
+            <li><a href="../areas-curriculares/index.html" class="hover:text-yellow-600 flex items-center justify-between"><span>&bull; Áreas Curriculares</span> <i class="fas fa-chevron-right text-[10px]"></i></a></li>
+            <li><a href="../talleres-actividades/index.html" class="hover:text-yellow-600 flex items-center justify-between"><span>&bull; Talleres y Deportes</span> <i class="fas fa-chevron-right text-[10px]"></i></a></li>
+            <li><a href="../ceba/index.html" class="hover:text-yellow-600 flex items-center justify-between"><span>&bull; Modalidad CEBA</span> <i class="fas fa-chevron-right text-[10px]"></i></a></li>
+            <li><a href="../tramites-servicios/mesa-de-partes.html" class="hover:text-yellow-600 flex items-center justify-between"><span>&bull; Trámite Documentario</span> <i class="fas fa-chevron-right text-[10px]"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto Directo -->
+        <div class="bg-yellow-50 border border-yellow-200 p-5 rounded-2xl text-xs text-yellow-950 space-y-2">
+          <h4 class="font-bold font-heading text-sm text-yellow-900"><i class="fas fa-phone-alt text-yellow-700 mr-1.5"></i> Contáctanos en Mala</h4>
+          <p>Jr. Enrique Swayne s/n, Mala, Cañete.</p>
+          <p><strong>Teléfono:</strong> (01) 339-6215 / (01) 301-7765</p>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+
+  <!-- FOOTER COMPLETO INSTITUCIONAL -->
+  <footer class="bg-dmcNavy-900 text-slate-300 border-t border-yellow-500/20 pt-16 pb-8 px-4 sm:px-8 mt-auto">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
+      
+      <!-- Columna 1 -->
+      <div class="lg:col-span-4 space-y-4">
+        <div class="flex items-center gap-3">
+          <img src="../img/escudo-dmc.svg" alt="Escudo DMC" class="h-12 w-auto">
+          <div>
+            <span class="font-heading font-black text-base text-white block leading-tight">I.E. DIONISIO MANCO CAMPOS</span>
+            <span class="text-[11px] text-yellow-400 font-semibold uppercase">Alma Máter de Mala &bull; Fundado en 1962</span>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Institución educativa pública de educación secundaria (EBR y CEBA) en Mala, Cañete. Más de 60 años formando con honor bajo el lema <em>"Patria, Estudio y Disciplina"</em>.
+        </p>
+        <div class="text-xs text-slate-400 space-y-1">
+          <p><strong class="text-slate-300">Cód. Modular Secundaria:</strong> 0286385</p>
+          <p><strong class="text-slate-300">Cód. Modular CEBA:</strong> 0285676</p>
+          <p><strong class="text-slate-300">Cód. Local:</strong> 353596 &bull; UGEL N° 08 Cañete</p>
+        </div>
+      </div>
+
+      <!-- Columna 2: Ecosistema de Navegación -->
+      <div class="lg:col-span-3 space-y-3">
+        <h4 class="font-heading font-bold text-white text-xs uppercase tracking-wider border-l-2 border-yellow-400 pl-2">
+          Ecosistema Institucional
+        </h4>
+        <ul class="text-xs space-y-1.5 text-slate-400">
+          <li><a href="../institucional/index.html" class="hover:text-yellow-400">&bull; Portal Institucional & Historia</a></li>
+          <li><a href="../grados/index.html" class="hover:text-yellow-400">&bull; Grados y Secciones de Secundaria</a></li>
+          <li><a href="../areas-curriculares/index.html" class="hover:text-yellow-400">&bull; Plan Curricular CNEB MINEDU</a></li>
+          <li><a href="../ceba/index.html" class="hover:text-yellow-400">&bull; Modalidad CEBA para Adultos</a></li>
+          <li><a href="../talleres-actividades/index.html" class="hover:text-yellow-400">&bull; Talleres, Deportes y Banda</a></li>
+          <li><a href="../comunidad-estudiantil/index.html" class="hover:text-yellow-400">&bull; Municipio Escolar y Brigadas</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Servicios y Trámites -->
+      <div class="lg:col-span-2 space-y-3">
+        <h4 class="font-heading font-bold text-white text-xs uppercase tracking-wider border-l-2 border-yellow-400 pl-2">
+          Servicios y Gestión
+        </h4>
+        <ul class="text-xs space-y-1.5 text-slate-400">
+          <li><a href="../admision-matricula/index.html" class="hover:text-yellow-400">&bull; Admisión & Vacantes</a></li>
+          <li><a href="../tramites-servicios/mesa-de-partes.html" class="hover:text-yellow-400">&bull; Mesa de Partes Virtual</a></li>
+          <li><a href="../tramites-servicios/certificados-estudio.html" class="hover:text-yellow-400">&bull; Certificados de Estudio</a></li>
+          <li><a href="../padres-apafa/index.html" class="hover:text-yellow-400">&bull; Asociación APAFA</a></li>
+          <li><a href="../infraestructura/index.html" class="hover:text-yellow-400">&bull; Ambientes y Aulas</a></li>
+          <li><a href="../noticias-eventos/index.html" class="hover:text-yellow-400">&bull; Noticias & Calendario</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Ubicación y Contacto -->
+      <div class="lg:col-span-3 space-y-3">
+        <h4 class="font-heading font-bold text-white text-xs uppercase tracking-wider border-l-2 border-yellow-400 pl-2">
+          Atención al Ciudadano
+        </h4>
+        <p class="text-xs text-slate-400"><i class="fas fa-map-marker-alt text-yellow-400 mr-1.5"></i> Jr. Enrique Swayne s/n, Mala, Cañete, Lima.</p>
+        <p class="text-xs text-slate-400"><i class="fas fa-phone-alt text-yellow-400 mr-1.5"></i> Central: (01) 339-6215 / (01) 301-7765</p>
+        <p class="text-xs text-slate-400"><i class="fas fa-clock text-yellow-400 mr-1.5"></i> Horario: Lun - Vie: 8:00 a.m. - 3:00 p.m.</p>
+        <div class="pt-2 flex items-center gap-3">
+          <a href="https://www.facebook.com/iepdmc" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-blue-600 text-white flex items-center justify-center transition-colors">
+            <i class="fab fa-facebook-f text-xs"></i>
+          </a>
+          <a href="https://wa.me/51939621500" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-emerald-600 text-white flex items-center justify-center transition-colors">
+            <i class="fab fa-whatsapp text-xs"></i>
+          </a>
+          <a href="../tramites-servicios/mesa-de-partes.html" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-yellow-500 hover:text-slate-950 text-white flex items-center justify-center transition-colors">
+            <i class="fas fa-envelope text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sub-footer copyright -->
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+      <p>&copy; 2026 I.E. Dionisio Manco Campos - Mala, Cañete. Alma Máter de la Secundaria.</p>
+      <div class="flex items-center gap-3">
+        <a href="../institucional/himno.html" class="hover:text-slate-300">Himno Oficial</a>
+        <span>&bull;</span>
+        <a href="../tramites-servicios/libro-reclamaciones.html" class="hover:text-slate-300">Libro de Reclamaciones</a>
+        <span>&bull;</span>
+        <a href="../README.md" class="hover:text-slate-300">Repositorio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/51939621500?text=Hola,%20solicito%20información%20sobre%20la%20I.E.%20Dionisio%20Manco%20Campos%20de%20Mala" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="fixed bottom-6 right-6 z-40 btn-whatsapp text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl" 
+     aria-label="WhatsApp Institucional">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="btn-scroll-top" 
+          class="fixed bottom-24 right-7 z-40 btn-scroll-top text-yellow-400 w-11 h-11 rounded-full flex items-center justify-center text-lg shadow-xl opacity-0 pointer-events-none transition-all duration-300"
+          aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+    
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

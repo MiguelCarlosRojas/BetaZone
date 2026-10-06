@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hzShield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2942" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="hzGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Shield Miniature -->
+  <g transform="translate(10, 5) scale(0.15)">
+    <path d="M 250 20 C 380 20, 460 60, 460 140 C 460 340, 390 450, 250 540 C 110 450, 40 340, 40 140 C 40 60, 120 20, 250 20 Z" fill="url(#hzGold)" stroke="#a16207" stroke-width="6"/>
+    <path d="M 250 35 C 365 35, 440 72, 440 145 C 440 330, 375 432, 250 518 C 125 432, 60 330, 60 145 C 60 72, 135 35, 250 35 Z" fill="url(#hzShield)" stroke="#fef08a" stroke-width="4"/>
+    <text x="250" y="240" font-family="'Arial Black', sans-serif" font-weight="900" font-size="80" fill="#fef08a" text-anchor="middle">DMC</text>
+    <path d="M 250 270 C 275 305, 275 335, 260 360 C 255 345, 252 335, 245 330 C 248 345, 242 355, 238 360 C 225 335, 230 305, 250 270 Z" fill="#ef4444"/>
+    <rect x="244" y="360" width="12" height="60" fill="url(#hzGold)" rx="3"/>
+    <text x="250" y="480" font-family="'Arial Black', sans-serif" font-weight="bold" font-size="36" fill="#ffffff" text-anchor="middle">MALA - 1962</text>
+  </g>
+
+  <!-- Textual Brand -->
+  <text x="100" y="34" font-family="'Outfit', 'Montserrat', 'Segoe UI', sans-serif" font-weight="900" font-size="22" fill="#0f2942" letter-spacing="1">
+    I.E. DIONISIO MANCO CAMPOS
+  </text>
+  <text x="100" y="58" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="13" fill="#2563eb" letter-spacing="2">
+    EDUCACIÓN SECUNDARIA &bull; MALA, CAÑETE
+  </text>
+  <text x="100" y="80" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="11" fill="#64748b" letter-spacing="1.5">
+    UGEL N° 08 &bull; CÓD. MODULAR 0286385 &bull; PATRIA, ESTUDIO Y DISCIPLINA
+  </text>
+</svg>
