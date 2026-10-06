@@ -1,6 +1,7 @@
 /* ====================================================================
    ESTILOS INSTITUCIONALES DE ALTA CALIDAD - I.E. DIONISIO MANCO CAMPOS
    Alma Máter de la Educación Secundaria | Mala, Cañete, Lima - Perú
+   Diseño Full-Width, Responsive Adaptable (Móvil, Tablet, Desktop, UltraWide)
    ==================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
@@ -40,6 +41,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  transition: opacity 0.2s ease;
 }
 
 body {
@@ -49,19 +51,44 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Ocupar el 100% del ancho de la pantalla sin constreñir a anchos pequeños */
+/* ================= RESPONSIVE FULL-WIDTH SYSTEM ================= */
+/* Se adapta con fluidez en pantallas pequeñas, medianas, laptops y monitores 4K */
 .max-w-7xl {
-  max-width: 96% !important;
   width: 100% !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+@media (min-width: 640px) {
+  .max-w-7xl {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .max-w-7xl {
+    max-width: 96% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 }
 
 @media (min-width: 1536px) {
   .max-w-7xl {
     max-width: 94% !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .max-w-7xl {
+    max-width: 92% !important;
   }
 }
 
@@ -240,6 +267,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .map-full-container {
   position: relative;
   width: 100%;
+  min-height: 380px;
   height: 520px;
   overflow: hidden;
   border-radius: var(--radius-lg);

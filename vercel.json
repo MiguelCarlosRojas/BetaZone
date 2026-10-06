@@ -1,4 +1,10 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/(components|pages|styles|js|img)/(.*)",
+      "destination": "/src/$1/$2"
+    }
+  ]
 }
