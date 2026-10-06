@@ -12,26 +12,26 @@ class DmcBreadcrumb extends HTMLElement {
     const category = this.getAttribute('category') || '';
 
     const sectionUrls = {
-      'Institucional': `${root}pages/institutional/about`,
-      'Académico': `${root}pages/academics/pedagogical-proposal`,
-      'Vida Escolar': `${root}pages/school-life/workshops-overview`,
-      'Servicios': `${root}pages/services/contact`
+      'Institucional': `${root}pages/institutional/about.html`,
+      'Académico': `${root}pages/academics/pedagogical-proposal.html`,
+      'Vida Escolar': `${root}pages/school-life/workshops-overview.html`,
+      'Servicios': `${root}pages/services/contact.html`
     };
 
     const categoryUrls = {
-      'Historia': `${root}pages/institutional/history/`,
-      'Símbolos': `${root}pages/institutional/symbols/`,
-      'Gestión': `${root}pages/institutional/management/`,
-      'Grados': `${root}pages/academics/grades/`,
-      'Áreas Curriculares': `${root}pages/academics/curricular-areas/`,
-      'CEBA': `${root}pages/academics/ceba/`,
-      'Talleres': `${root}pages/school-life/workshops/`,
-      'Estudiantes': `${root}pages/school-life/students/`,
-      'Familias': `${root}pages/school-life/families/`,
-      'Admisión': `${root}pages/services/admissions/`,
-      'Infraestructura': `${root}pages/services/infrastructure/`,
-      'Trámites': `${root}pages/services/procedures/`,
-      'Noticias': `${root}pages/services/news/`
+      'Historia': `${root}pages/institutional/about.html`,
+      'Símbolos': `${root}pages/institutional/about.html`,
+      'Gestión': `${root}pages/institutional/about.html`,
+      'Grados': `${root}pages/academics/pedagogical-proposal.html`,
+      'Áreas Curriculares': `${root}pages/academics/curricular-areas/comunicacion.html`,
+      'CEBA': `${root}pages/academics/ceba/index.html`,
+      'Talleres': `${root}pages/school-life/workshops-overview.html`,
+      'Estudiantes': `${root}pages/school-life/workshops-overview.html`,
+      'Familias': `${root}pages/school-life/workshops-overview.html`,
+      'Admisión': `${root}pages/services/admissions/overview.html`,
+      'Infraestructura': `${root}pages/services/contact.html`,
+      'Trámites': `${root}pages/services/contact.html`,
+      'Noticias': `${root}pages/services/news/calendario-civico.html`
     };
 
     let breadcrumbsHtml = `

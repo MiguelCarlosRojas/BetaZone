@@ -48,16 +48,16 @@ class DmcHeader extends HTMLElement {
           <!-- Desktop Nav -->
           <nav class="hidden lg:flex items-center gap-6 xl:gap-8 font-medium text-sm text-slate-200">
             <a href="${root}" class="nav-link ${active === 'inicio' ? 'active' : ''} hover:text-amber-400 py-1">Inicio</a>
-            <a href="${root}pages/institutional/about" class="nav-link ${active === 'nosotros' ? 'active' : ''} hover:text-amber-400 py-1">Nosotros</a>
-            <a href="${root}pages/academics/pedagogical-proposal" class="nav-link ${active === 'propuesta' ? 'active' : ''} hover:text-amber-400 py-1">Propuesta Pedagógica</a>
-            <a href="${root}pages/school-life/workshops-overview" class="nav-link ${active === 'talleres' ? 'active' : ''} hover:text-amber-400 py-1">Talleres & Vida Escolar</a>
-            <a href="${root}pages/services/admissions/" class="nav-link ${active === 'admision' ? 'active' : ''} hover:text-amber-400 py-1">Admisión</a>
-            <a href="${root}pages/services/contact" class="nav-link ${active === 'contacto' ? 'active' : ''} hover:text-amber-400 py-1">Contacto</a>
+            <a href="${root}pages/institutional/about.html" class="nav-link ${active === 'nosotros' ? 'active' : ''} hover:text-amber-400 py-1">Nosotros</a>
+            <a href="${root}pages/academics/pedagogical-proposal.html" class="nav-link ${active === 'propuesta' ? 'active' : ''} hover:text-amber-400 py-1">Propuesta Pedagógica</a>
+            <a href="${root}pages/school-life/workshops-overview.html" class="nav-link ${active === 'talleres' ? 'active' : ''} hover:text-amber-400 py-1">Talleres & Vida Escolar</a>
+            <a href="${root}pages/services/admissions/overview.html" class="nav-link ${active === 'admision' ? 'active' : ''} hover:text-amber-400 py-1">Admisión</a>
+            <a href="${root}pages/services/contact.html" class="nav-link ${active === 'contacto' ? 'active' : ''} hover:text-amber-400 py-1">Contacto</a>
           </nav>
 
           <!-- Action Button Desktop -->
           <div class="hidden lg:flex items-center gap-3">
-            <a href="${root}pages/services/contact#mesa-de-partes" class="inline-flex items-center gap-2 btn-gold text-slate-950 font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all">
+            <a href="${root}pages/services/contact.html#mesa-de-partes" class="inline-flex items-center gap-2 btn-gold text-slate-950 font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all">
               <i class="fas fa-file-invoice"></i> Mesa de Partes
             </a>
           </div>

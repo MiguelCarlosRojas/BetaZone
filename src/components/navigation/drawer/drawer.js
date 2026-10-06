@@ -30,23 +30,23 @@ class DmcDrawer extends HTMLElement {
               <span><i class="fas fa-home w-6 text-amber-400"></i> Inicio</span>
               <i class="fas fa-chevron-right text-xs"></i>
             </a>
-            <a href="${root}pages/institutional/about" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
+            <a href="${root}pages/institutional/about.html" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
               <span><i class="fas fa-landmark w-6 text-amber-400"></i> Nosotros</span>
               <i class="fas fa-chevron-right text-xs"></i>
             </a>
-            <a href="${root}pages/academics/pedagogical-proposal" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
+            <a href="${root}pages/academics/pedagogical-proposal.html" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
               <span><i class="fas fa-graduation-cap w-6 text-amber-400"></i> Propuesta Pedagógica</span>
               <i class="fas fa-chevron-right text-xs"></i>
             </a>
-            <a href="${root}pages/school-life/workshops-overview" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
+            <a href="${root}pages/school-life/workshops-overview.html" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
               <span><i class="fas fa-palette w-6 text-amber-400"></i> Talleres & Vida Escolar</span>
               <i class="fas fa-chevron-right text-xs"></i>
             </a>
-            <a href="${root}pages/services/admissions/" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
+            <a href="${root}pages/services/admissions/overview.html" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
               <span><i class="fas fa-user-plus w-6 text-amber-400"></i> Admisión & Matrícula</span>
               <i class="fas fa-chevron-right text-xs"></i>
             </a>
-            <a href="${root}pages/services/contact" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
+            <a href="${root}pages/services/contact.html" class="hover:text-amber-400 py-2 border-b border-slate-800/60 flex items-center justify-between">
               <span><i class="fas fa-map-marker-alt w-6 text-amber-400"></i> Contacto</span>
               <i class="fas fa-chevron-right text-xs"></i>
             </a>
@@ -54,7 +54,7 @@ class DmcDrawer extends HTMLElement {
         </div>
 
         <div class="pt-6 border-t border-slate-800 flex flex-col gap-3">
-          <a href="${root}pages/services/contact#mesa-de-partes" class="btn-gold text-slate-950 font-bold py-3 text-center rounded-xl text-xs uppercase tracking-wider block">
+          <a href="${root}pages/services/contact.html#mesa-de-partes" class="btn-gold text-slate-950 font-bold py-3 text-center rounded-xl text-xs uppercase tracking-wider block">
             <i class="fas fa-file-invoice mr-1.5"></i> Mesa de Partes Virtual
           </a>
           <p class="text-[11px] text-slate-400 text-center">
