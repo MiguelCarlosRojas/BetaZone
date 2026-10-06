@@ -39,12 +39,12 @@ class DmcFooter extends HTMLElement {
               </h4>
               <ul class="space-y-2 text-xs">
                 <li><a href="${root}" class="hover:text-amber-400 transition-colors">Inicio</a></li>
-                <li><a href="${root}pages/institutional/about" class="hover:text-amber-400 transition-colors">Reseña Histórica</a></li>
-                <li><a href="${root}pages/academics/pedagogical-proposal" class="hover:text-amber-400 transition-colors">Propuesta Curricular</a></li>
-                <li><a href="${root}pages/academics/grades/" class="hover:text-amber-400 transition-colors">Grados de Secundaria</a></li>
-                <li><a href="${root}pages/school-life/workshops/" class="hover:text-amber-400 transition-colors">Talleres & Deportes</a></li>
-                <li><a href="${root}pages/services/admissions/" class="hover:text-amber-400 transition-colors">Admisión Escolar</a></li>
-                <li><a href="${root}pages/services/contact" class="hover:text-amber-400 transition-colors">Contacto y Mesa de Partes</a></li>
+                <li><a href="${root}pages/institutional/about.html" class="hover:text-amber-400 transition-colors">Reseña Histórica</a></li>
+                <li><a href="${root}pages/academics/pedagogical-proposal.html" class="hover:text-amber-400 transition-colors">Propuesta Curricular</a></li>
+                <li><a href="${root}pages/academics/grades/index.html" class="hover:text-amber-400 transition-colors">Grados de Secundaria</a></li>
+                <li><a href="${root}pages/school-life/workshops-overview.html" class="hover:text-amber-400 transition-colors">Talleres & Deportes</a></li>
+                <li><a href="${root}pages/services/admissions/overview.html" class="hover:text-amber-400 transition-colors">Admisión Escolar</a></li>
+                <li><a href="${root}pages/services/contact.html" class="hover:text-amber-400 transition-colors">Contacto y Mesa de Partes</a></li>
               </ul>
             </div>
 
@@ -93,11 +93,11 @@ class DmcFooter extends HTMLElement {
           <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
             <p>&copy; 1962 - 2026 <strong>I.E. Dionisio Manco Campos</strong>. Todos los derechos reservados.</p>
             <p class="flex items-center gap-4">
-              <a href="${root}pages/institutional/management/ri" class="hover:text-amber-400">Reglamento Interno</a>
+              <a href="${root}pages/institutional/management/ri.html" class="hover:text-amber-400">Reglamento Interno</a>
               <span>&bull;</span>
-              <a href="${root}pages/services/procedures/libro-reclamaciones" class="hover:text-amber-400">Libro de Reclamaciones</a>
+              <a href="${root}pages/services/procedures/libro-reclamaciones.html" class="hover:text-amber-400">Libro de Reclamaciones</a>
               <span>&bull;</span>
-              <a href="${root}pages/services/procedures/tupa" class="hover:text-amber-400">TUPA</a>
+              <a href="${root}pages/services/procedures/tupa.html" class="hover:text-amber-400">TUPA</a>
             </p>
           </div>
         </div>
