@@ -1,25 +1,32 @@
 /* ====================================================================
-   ESTILOS INSTITUCIONALES - I.E. DIONISIO MANCO CAMPOS (MALA - CAÑETE)
-   Diseño Full-Width, Moderno y Profesional
+   ESTILOS INSTITUCIONALES DE ALTA CALIDAD - I.E. DIONISIO MANCO CAMPOS
+   Alma Máter de la Educación Secundaria | Mala, Cañete, Lima - Perú
    ==================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --primary-navy: #0f2942;
-  --secondary-navy: #1a3a5f;
-  --dark-navy: #091929;
-  --accent-gold: #eab308;
-  --accent-gold-dark: #ca8a04;
+  --primary-navy: #091929;
+  --secondary-navy: #0f2942;
+  --accent-navy-card: #143252;
+  --accent-gold: #f59e0b;
   --accent-gold-light: #fef08a;
+  --accent-gold-hover: #d97706;
   --accent-red: #dc2626;
-  --accent-blue: #2563eb;
-  --text-dark: #1e293b;
+  --accent-cyan: #06b6d4;
+  --accent-emerald: #10b981;
+  --text-dark: #0f172a;
+  --text-body: #334155;
   --text-muted: #64748b;
-  --bg-light: #f8fafc;
-  --bg-white: #ffffff;
-  --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --bg-slate: #f8fafc;
+  --card-border: rgba(226, 232, 240, 0.85);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
+  --shadow-glow: 0 0 25px -3px rgba(245, 158, 11, 0.35);
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
 }
 
 * {
@@ -28,80 +35,124 @@
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: var(--text-dark);
-  background-color: var(--bg-light);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-body);
+  background-color: var(--bg-slate);
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: 'Outfit', 'Inter', sans-serif;
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
 }
 
-/* Glassmorphism Classes */
+/* Glassmorphism Styles */
 .glass-nav {
-  background: rgba(15, 41, 66, 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(234, 179, 8, 0.2);
+  background: rgba(9, 25, 41, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25);
+  transition: all 0.3s ease;
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(245, 158, 11, 0.4);
 }
 
 .glass-card-dark {
-  background: rgba(15, 41, 66, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(234, 179, 8, 0.25);
+  background: linear-gradient(145deg, rgba(15, 41, 66, 0.95) 0%, rgba(9, 25, 41, 0.98) 100%);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: var(--radius-lg);
+  color: #ffffff;
 }
 
-/* Banner de anuncios cívicos */
+/* Announcements Bar */
 .top-announcement {
-  background: linear-gradient(90deg, #b91c1c 0%, #0f2942 50%, #1e3a8a 100%);
+  background: linear-gradient(90deg, #991b1b 0%, #091929 50%, #1e3a8a 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Hero Section Gradients & Visuals */
+/* Hero Section Gradients */
 .hero-gradient {
   background: linear-gradient(135deg, rgba(9, 25, 41, 0.94) 0%, rgba(15, 41, 66, 0.88) 50%, rgba(30, 58, 138, 0.82) 100%),
               url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
 }
 
 .hero-subpage {
-  background: linear-gradient(135deg, rgba(9, 25, 41, 0.92) 0%, rgba(15, 41, 66, 0.85) 100%),
+  background: linear-gradient(135deg, rgba(9, 25, 41, 0.93) 0%, rgba(15, 41, 66, 0.88) 100%),
               url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
 }
 
-/* Gold Gradient Effects */
+/* Gold Gradient Typography & Borders */
 .text-gold-gradient {
-  background: linear-gradient(135deg, #fef08a 0%, #eab308 50%, #f59e0b 100%);
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .border-gold-gradient {
-  border-image: linear-gradient(to right, #fde047, #ca8a04) 1;
+  border-image: linear-gradient(to right, #fef08a, #f59e0b) 1;
 }
 
-/* Interactive Elements */
+/* Interactive Lift Effects */
 .hover-lift {
-  transition: var(--transition-fast);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .hover-lift:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 25px -5px rgba(15, 41, 66, 0.15), 0 8px 10px -6px rgba(15, 41, 66, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(15, 41, 66, 0.12), 0 8px 10px -6px rgba(15, 41, 66, 0.08);
 }
 
-/* Floating Actions */
+/* Buttons */
+.btn-gold {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #091929;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+  transition: all 0.25s ease;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #fef08a 0%, #fbbf24 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+}
+
+.btn-navy {
+  background: linear-gradient(135deg, #0f2942 0%, #091929 100%);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(9, 25, 41, 0.35);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  transition: all 0.25s ease;
+}
+.btn-navy:hover {
+  background: linear-gradient(135deg, #173d63 0%, #0f2942 100%);
+  border-color: #f59e0b;
+  transform: translateY(-2px);
+}
+
 .btn-whatsapp {
   background-color: #25d366;
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
-  transition: var(--transition-fast);
+  transition: all 0.25s ease;
 }
 .btn-whatsapp:hover {
   transform: scale(1.08) rotate(4deg);
@@ -109,9 +160,9 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .btn-scroll-top {
-  background-color: var(--primary-navy);
+  background-color: var(--secondary-navy);
   border: 2px solid var(--accent-gold);
-  transition: var(--transition-fast);
+  transition: all 0.25s ease;
 }
 .btn-scroll-top:hover {
   background-color: var(--accent-gold);
@@ -119,20 +170,20 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   transform: translateY(-4px);
 }
 
-/* Navigation active indicator */
+/* Navigation Links Indicator */
 .nav-link {
   position: relative;
-  transition: var(--transition-fast);
+  transition: color 0.2s ease;
 }
 .nav-link::after {
   content: '';
   position: absolute;
   width: 0;
-  height: 3px;
+  height: 2.5px;
   bottom: -4px;
   left: 50%;
   background-color: var(--accent-gold);
-  transition: var(--transition-fast);
+  transition: all 0.25s ease;
   transform: translateX(-50%);
   border-radius: 9999px;
 }
@@ -158,15 +209,17 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   border: 2px solid #f1f5f9;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #eab308;
+  background: #f59e0b;
 }
 
-/* Map Container Full Responsive */
+/* Maps Full Width Responsive */
 .map-full-container {
   position: relative;
   width: 100%;
   height: 480px;
   overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 .map-full-container iframe {
   width: 100%;
@@ -174,16 +227,30 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   border: 0;
 }
 
-/* Shimmer / Pulse effects */
-@keyframes goldPulse {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.6);
-  }
-  50% {
-    box-shadow: 0 0 0 14px rgba(234, 179, 8, 0);
-  }
+/* Badges & Stats */
+.stat-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+.stat-card:hover {
+  border-color: #f59e0b;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
 }
 
+/* Animations */
+@keyframes goldPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(245, 158, 11, 0);
+  }
+}
 .pulse-gold {
   animation: goldPulse 2.5s infinite;
 }
