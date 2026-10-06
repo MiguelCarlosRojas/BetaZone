@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
   if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileMenu);
 
-  // 2. Sticky Navbar Glass Effect on Scroll
+  // 2. Sticky Navbar Glass Effect on Scroll & Scroll-To-Top button delegation
   const mainHeader = document.getElementById('main-header');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) {
@@ -54,13 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 3. Scroll to Top Button Action
-  const scrollTopBtn = document.getElementById('btn-scroll-top');
-  if (scrollTopBtn) {
-    scrollTopBtn.addEventListener('click', () => {
+  // 3. Scroll to Top Button Action (delegado para Web Components)
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('#btn-scroll-top');
+    if (btn) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
+    }
+  });
 
   // 4. FAQ Accordion Toggle
   const faqItems = document.querySelectorAll('.faq-item');
@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (trigger && content) {
       trigger.addEventListener('click', () => {
         const isOpen = !content.classList.contains('hidden');
-        // Close all
         document.querySelectorAll('.faq-content').forEach((c) => c.classList.add('hidden'));
         document.querySelectorAll('.faq-icon').forEach((i) => i.classList.remove('rotate-180'));
 
@@ -91,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       const category = btn.getAttribute('data-filter-tab');
-      // Update button active state
       filterBtns.forEach((b) => {
         b.classList.remove('bg-yellow-500', 'text-slate-900', 'font-bold');
         b.classList.add('bg-slate-100', 'text-slate-700');
@@ -99,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('bg-yellow-500', 'text-slate-900', 'font-bold');
       btn.classList.remove('bg-slate-100', 'text-slate-700');
 
-      // Filter cards
       filterItems.forEach((card) => {
         if (category === 'all' || card.getAttribute('data-filter-category') === category) {
           card.classList.remove('hidden');
@@ -179,20 +176,21 @@ document.addEventListener('DOMContentLoaded', () => {
     btnToggleHimno.addEventListener('click', () => {
       if (!isHimnoPlaying) {
         isHimnoPlaying = true;
-        btnToggleHimno.innerHTML = '<i class="fas fa-pause mr-2 text-yellow-400"></i> Pausar Recitación';
-        let currentIdx = 0;
-        himnoStanzas[0].classList.add('bg-yellow-500/20', 'border-l-4', 'border-yellow-400', 'p-3', 'rounded');
+        btnToggleHimno.innerHTML = '<i class="fas fa-pause mr-2"></i> Pausar Declamación';
+        let idx = 0;
+        himnoStanzas.forEach(s => s.classList.remove('bg-yellow-50', 'border-yellow-400'));
+        himnoStanzas[0].classList.add('bg-yellow-50', 'border-yellow-400');
 
         himnoInterval = setInterval(() => {
-          himnoStanzas.forEach(s => s.classList.remove('bg-yellow-500/20', 'border-l-4', 'border-yellow-400', 'p-3', 'rounded'));
-          currentIdx = (currentIdx + 1) % himnoStanzas.length;
-          himnoStanzas[currentIdx].classList.add('bg-yellow-500/20', 'border-l-4', 'border-yellow-400', 'p-3', 'rounded');
-        }, 3500);
+          himnoStanzas[idx].classList.remove('bg-yellow-50', 'border-yellow-400');
+          idx = (idx + 1) % himnoStanzas.length;
+          himnoStanzas[idx].classList.add('bg-yellow-50', 'border-yellow-400');
+        }, 4000);
       } else {
         isHimnoPlaying = false;
         clearInterval(himnoInterval);
-        btnToggleHimno.innerHTML = '<i class="fas fa-play mr-2 text-yellow-400"></i> Iniciar Modo Lectura Musical';
-        himnoStanzas.forEach(s => s.classList.remove('bg-yellow-500/20', 'border-l-4', 'border-yellow-400', 'p-3', 'rounded'));
+        btnToggleHimno.innerHTML = '<i class="fas fa-play mr-2"></i> Iniciar Lectura Guiada';
+        himnoStanzas.forEach(s => s.classList.remove('bg-yellow-50', 'border-yellow-400'));
       }
     });
   }

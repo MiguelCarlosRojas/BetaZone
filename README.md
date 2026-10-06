@@ -1,8 +1,7 @@
 # 🏫 Portal Web Oficial | I.E. Dionisio Manco Campos (Mala - Cañete)
 
-[![Sitio Web Oficial](https://img.shields.io/badge/Sitio%20Web-Online-success?style=for-the-badge&logo=vercel)](https://landing-page-beta-chi.vercel.app)
-[![Producción Alternativa](https://img.shields.io/badge/Vercel-dmc--betazone.vercel.app-blue?style=for-the-badge&logo=vercel)](https://dmc-betazone.vercel.app)
-[![Institución Educativa](https://img.shields.io/badge/Nivel-Secundaria%20%7C%20EBR%20%26%20CEBA-navy?style=for-the-badge)](https://landing-page-beta-chi.vercel.app)
+[![Sitio Web Oficial](https://img.shields.io/badge/Sitio%20Web-dmc--betazone.vercel.app-success?style=for-the-badge&logo=vercel)](https://dmc-betazone.vercel.app)
+[![Institución Educativa](https://img.shields.io/badge/Nivel-Secundaria%20%7C%20EBR%20%26%20CEBA-navy?style=for-the-badge)](https://dmc-betazone.vercel.app)
 [![UGEL](https://img.shields.io/badge/UGEL-08%20Cañete-orange?style=for-the-badge)](http://ugel08canete.gob.pe/)
 [![Licencia](https://img.shields.io/badge/Licencia-Educativa%20Libre-brightgreen?style=for-the-badge)](COPYRIGHT.md)
 
@@ -17,7 +16,7 @@ Para actualizar los metadatos en la configuración principal del repositorio de 
 * **Description (Menor a 350 caracteres):**  
   > Portal oficial de la I.E. Dionisio Manco Campos (Mala, Cañete). Educación secundaria y CEBA fundada en 1962 con módulos académicos, vida escolar, talleres, trámites y admisión bajo el lema "Patria, Estudio y Disciplina".
 * **Website:**  
-  `https://landing-page-beta-chi.vercel.app`
+  `https://dmc-betazone.vercel.app`
 * **Topics (Temas recomendados):**  
   `colegio-peru`, `educacion-secundaria`, `dionisio-manco-campos`, `ceba`, `mala-canete`, `ugel08`, `cneb`, `minedu`, `portal-educativo`, `html5`, `css3`, `tailwind-css`, `vercel`, `clean-urls`
 * **Include in the home page:**  
